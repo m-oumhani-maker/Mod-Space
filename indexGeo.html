@@ -305,7 +305,7 @@
             </div>
         </div>
 
-        <div class="bg-forest-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 py-16">
             <div class="max-w-7xl mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-10 text-emerald-400">الأهداف الاستراتيجية (2026 - 2031)</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -487,13 +487,13 @@
         { id: "Aptitude_Finale_Ziziphus_lotus", arabic: "السدر", latin: "Ziziphus lotus" }
     ];
 
-    // 🟢 التعديل الحاسم للنشر: قراءة الـ Tiles نسبياً من نفس المجلد المرفوع لضمان عملها مجاناً
+    // 🟢 قراءة الـ Tiles نسبياً من نفس المجلد المرفوع لضمان عملها مجاناً
     const TILES_BASE_PATH = 'Platform_Tiles/';
 
-    // 🟢 التعديل الحاسم للباك إند: التبديل بين الرابط المحلي ورابط Koyeb عند النشر
+    // 🟢 التعديل الحاسم والمؤكد للاتصال بسيرفر Hugging Face Spaces المستقر والآمن
     const API_BASE_URL = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
-        ? "http://127.0.0.1:5000"  // الرابط المحلي الفعلي لـ Flask
-        : "https://your-project.koyeb.app"; // ⚠️ استبدله برابط تطبيقك على Koyeb بعد الحصول عليه
+        ? "http://127.0.0.1:7860"  // منفذ التطوير المحلي المتوافق مع بايثون
+        : "https://moumhani8-mod-space-backend.hf.space"; // الرابط الرسمي والمباشر للباك إند أونلاين
 
     let map, currentLayer, selectedSpecies = "Aptitude_Finale_Acacia_spp";
     let mapInitialized = false;
